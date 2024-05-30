@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './FloatingCard.module.css'; // Import the CSS file
-import Link from 'next/link';
 
 const FloatingCard = ({ img, title, content,tag }) => {
     const [isVisible, setIsVisible] = useState(false);
