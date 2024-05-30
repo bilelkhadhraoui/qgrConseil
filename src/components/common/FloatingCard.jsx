@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import './FloatingCard.module.css'; // Import the CSS file
+import styles from './FloatingCard.module.css'; // Import the CSS file
+import Link from 'next/link';
 
-const FloatingCard = ({ children }) => {
+const FloatingCard = ({ img, title, content,tag }) => {
     const [isVisible, setIsVisible] = useState(false);
 
     const toggleCard = () => {
@@ -9,16 +10,24 @@ const FloatingCard = ({ children }) => {
     };
 
     return (
-        <div className="floating-card-container">
-            <div onClick={toggleCard}>
-                {children}
-            </div>
-            {isVisible && (
-                <div className="floating-card">
-                    <h2>Floating Card</h2>
-                    <p>This is a floating card that can be toggled on and off.</p>
+        <div className={styles.floatingCard} onClick={toggleCard}>
+            <div className="eg-card1">
+                <div className="card-img magnetic-item">
+                    <img src={img} alt="" style={{
+                        maxHeight: "200px",
+                        objectFit: "cover",
+                        width: "100%",
+                    }} />
                 </div>
-            )}
+                <div className="card-content">
+                    <a>{tag} <span />
+                    </a>
+                    <h5>
+                        <a>{title}</a>
+                    </h5>
+                    {isVisible ? <p> {content} </p> : null}
+                </div>
+            </div>
         </div>
     );
 };

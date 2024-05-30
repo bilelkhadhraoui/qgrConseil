@@ -136,78 +136,66 @@ const CoverArea = () => {
                 <Swiper {...coverslider} className="swiper cover-carasol">
                   <div className="swiper-wrapper">
                     <SwiperSlide className="swiper-slide">
-                      <div className="eg-card1">
-                        <div className="card-img magnetic-item">
-                          <img src="assets/img/home1/carou1.png" alt="" />
-                        </div>
-                        <div className="card-content">
-                          <FloatingCard>
-                            <a>
-                              Cartographier <span />
-                            </a>
-                            <h5>
-                              <a>Gestion des risques &#x2198;</a>
-                            </h5>
-                          </FloatingCard>
-                        </div>
-                      </div>
+                      <FloatingCard img="assets/img/home1/carou1.png" title="GESTION DES RISQUES" tag={'Cartographier'} content={<div>
+                        <p>Conception et réalisation d'audit diagnostic,</p>
+                        <p>Synthétisation des constats,</p>
+                        <p>Présentation des préconisations,</p>
+                        <p>Proposition d'un plan d'actions,</p>
+                      </div>} />
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                      <div className="eg-card1">
-                        <div className="card-img magnetic-item">
-                          <img src="assets/img/home1/carou2.png" alt="" />
+                      <FloatingCard img="assets/img/home1/carou2.png" title="QUALITÉ" tag={"Structurer"} content={
+                        <div>
+                          <p>Évaluation des écarts au référentiel,</p>
+                          <p>Création et mise à jour des indicateurs,</p>
+                          <p>Réalisation d'audit à blanc,</p>
+                          <p>Appui lors de la viste d'audit de certification,</p>
+                          <p>Proposition de réponses aux recommandations émises lores de l'audit,</p>
                         </div>
-                        <div className="card-content">
-                          <Link legacyBehavior href="#">
-                            <a>
-                              Structurer <span />
-                            </a>
-                          </Link>
-                          <h5>
-                            <Link legacyBehavior href="/service-details">
-                              <a>Qualité</a>
-                            </Link>
-                          </h5>
-                        </div>
-                      </div>
+                      } />
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                      <div className="eg-card1">
-                        <div className="card-img magnetic-item">
-                          <img src="assets/img/home1/carou3.png" alt="" />
+                      <FloatingCard img="assets/img/home1/carou3.png" title="AMÉLIORATION CONTINUE" tag={"Optimiser"} content={
+                        <div>
+                          <p>Audit du système qualité existant,</p>
+                          <p>Détection des axes d'Amélioration,</p>
+                          <p>Création du plan d'actions et des indicateurs,</p>
+                          <p>Organisation et suivi des retours d'expériences.</p>
                         </div>
-                        <div className="card-content">
-                          <Link legacyBehavior href="#">
-                            <a>
-                              Optimiser<span />
-                            </a>
-                          </Link>
-                          <h5>
-                            <Link legacyBehavior href="/service-details">
-                              <a>Amélioration Continue</a>
-                            </Link>
-                          </h5>
-                        </div>
-                      </div>
+                      } />
                     </SwiperSlide>
                     <SwiperSlide className="swiper-slide">
-                      <div className="eg-card1">
-                        <div className="card-img magnetic-item">
-                          <img src="assets/img/home1/carou4.png" alt="" />
+                      <FloatingCard img="assets/img/home1/carou4.png" title="management qualité de transition" tag={"Accompagner"} content={
+                        <div>
+                          <p>Gestion du quotidien qualité,</p>
+                          <p>Tutorat de la montée en compétence qualité des collaborateurs,</p>
+                          <p>Accompagnement à la gestion de crise,</p>
+                          <p>Management relais,</p>
                         </div>
-                        <div className="card-content">
-                          <Link legacyBehavior href="#">
-                            <a>
-                              Accompagner <span />
-                            </a>
-                          </Link>
-                          <h5>
-                            <Link legacyBehavior href="/service-details">
-                              <a>Gestion de la Qualité des Transitions</a>
-                            </Link>
-                          </h5>
+                      } />
+                    </SwiperSlide>
+                    <SwiperSlide className="swiper-slide">
+                      <FloatingCard img="assets/img/home1/carou5.jpg" title="L'ADN" tag={"QGR Conseil"} content={
+                        <div>
+                          <p>Coconstruire avec vous un système qualité efficient en optimisant les outils existants</p>
+                          <ul>
+                            <li>Pour dynamiser la démarche qualité</li>
+                            <li>Pour augmenter la satisfaction client</li>
+                            <li>Pour déployer une stratégie d'amélioration continue</li>
+                          </ul>
                         </div>
-                      </div>
+                      } />
+                    </SwiperSlide>
+                    <SwiperSlide className="swiper-slide">
+                      <FloatingCard img="assets/img/home1/carou6.jpg" title="LES VALEURS" tag={"QGR Conseil"} content={
+                        <div>
+                          <ul>
+                            <li>Curiosité</li>
+                            <li>Pragmatisme</li>
+                            <li>Créativité</li>
+                          </ul>
+                        </div>
+                      } />
                     </SwiperSlide>
                   </div>
                 </Swiper>
