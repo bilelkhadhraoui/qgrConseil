@@ -5,7 +5,6 @@ const ClientSection = () => {
   return (
     <div className="client-section mb-130">
       <div className="container-fluid one">
-        <h2 className="client-title">Ils me font confiance</h2>
         <div className="col-lg-12 pl--95 pr--95">
           <div className="client-logo-wrap">
             <div className="marque-wrap">
